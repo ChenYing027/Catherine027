@@ -26,6 +26,24 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+img,
+video {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-orientation: from-image;
+}
+
+@supports (image-rendering: optimizeQuality) {
+  img, video {
+    image-rendering: optimizeQuality;
+  }
+}
+
+img {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
 .paper-bg {
   background-color: var(--paper);
   background-image:
