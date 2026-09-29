@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Catherine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="paper-bg">
+  <svg class="doodle-defs" aria-hidden="true">
+    <defs>
+      <g id="safety-pin">
+        <circle cx="8" cy="8" r="6" fill="none" stroke="#1a2e5a" stroke-width="2"/>
+        <line x1="14" y1="8" x2="60" y2="8" stroke="#1a2e5a" stroke-width="2" stroke-linecap="round"/>
+        <line x1="60" y1="8" x2="52" y2="4" stroke="#1a2e5a" stroke-width="2" stroke-linecap="round"/>
+        <line x1="52" y1="4" x2="48" y2="12" stroke="#1a2e5a" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <g id="tape-strip">
+        <rect x="0" y="0" width="80" height="22" rx="2" fill="#f0e6c8" opacity="0.75"/>
+        <line x1="4" y1="6" x2="76" y2="6" stroke="#d4c79a" stroke-width="0.75" opacity="0.5"/>
+        <line x1="4" y1="16" x2="76" y2="16" stroke="#d4c79a" stroke-width="0.75" opacity="0.5"/>
+      </g>
+      <g id="doodle-star">
+        <path d="M12,2 L14.5,9 L22,9 L16,13.5 L18,21 L12,16.5 L6,21 L8,13.5 L2,9 L9.5,9 Z" fill="#1a2e5a" opacity="0.6"/>
+      </g>
+      <g id="doodle-spark">
+        <path d="M20,2 L23,14 L35,17 L23,20 L20,32 L17,20 L5,17 L17,14 Z" fill="none" stroke="#1a2e5a" stroke-width="2"/>
+      </g>
+      <g id="doodle-arrow">
+        <path d="M6,28 C18,8 36,8 52,24" fill="none" stroke="#1a2e5a" stroke-width="2.2" stroke-linecap="round"/>
+        <polygon points="43,16 54,25 44,31" fill="#1a2e5a"/>
+      </g>
+      <g id="hub-clapper">
+        <path d="M10,18 L62,10 L64,26 L12,34 Z" fill="none" stroke="#1a2e5a" stroke-width="2.4" stroke-linejoin="round"/>
+        <line x1="22" y1="6" x2="30" y2="26" stroke="#1a2e5a" stroke-width="2"/>
+        <line x1="36" y1="4" x2="44" y2="24" stroke="#1a2e5a" stroke-width="2"/>
+        <line x1="50" y1="2" x2="58" y2="22" stroke="#1a2e5a" stroke-width="2"/>
+        <line x1="14" y1="20" x2="60" y2="12" stroke="#1a2e5a" stroke-width="2.4" stroke-linecap="round"/>
+        <rect x="18" y="40" width="36" height="18" rx="2" fill="none" stroke="#1a2e5a" stroke-width="2.2"/>
+        <circle cx="26" cy="49" r="1.8" fill="#1a2e5a"/>
+        <circle cx="34" cy="49" r="1.8" fill="#1a2e5a"/>
+        <circle cx="42" cy="49" r="1.8" fill="#1a2e5a"/>
+        <circle cx="50" cy="49" r="1.8" fill="#1a2e5a"/>
+      </g>
+      <g id="hub-palette">
+        <path d="M10,36 C10,18 28,8 48,12 C62,14 62,32 50,34 L48,40 C44,48 32,52 24,46 C16,42 14,44 10,36 Z" fill="none" stroke="#1a2e5a" stroke-width="2.4" stroke-linejoin="round"/>
+        <circle cx="22" cy="26" r="3.2" fill="#1a2e5a"/>
+        <circle cx="36" cy="20" r="3.2" fill="#1a2e5a" opacity="0.7"/>
+        <circle cx="46" cy="26" r="3.2" fill="#1a2e5a" opacity="0.5"/>
+        <path d="M34,48 L30,60 L44,60 L40,48 Z" fill="none" stroke="#1a2e5a" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M20,54 L14,62 L24,62 Z" fill="none" stroke="#1a2e5a" stroke-width="1.8"/>
+      </g>
+      <g id="hub-polaroid">
+        <rect x="8" y="12" width="50" height="48" rx="2" fill="none" stroke="#1a2e5a" stroke-width="2.4"/>
+        <rect x="14" y="18" width="38" height="28" rx="1" fill="none" stroke="#1a2e5a" stroke-width="1.8"/>
+        <circle cx="24" cy="28" r="2" fill="none" stroke="#1a2e5a" stroke-width="1.6"/>
+        <path d="M18,42 L28,32 L34,40 L42,30 L50,42" fill="none" stroke="#1a2e5a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="46" cy="8" r="3.2" fill="none" stroke="#1a2e5a" stroke-width="2"/>
+        <path d="M46,4.8 C48.2,5.2 50.4,7.4 50.6,9.6" fill="none" stroke="#1a2e5a" stroke-width="1.6" stroke-linecap="round"/>
+      </g>
+      <g id="doodle-envelope">
+        <rect x="6" y="12" width="52" height="38" rx="3" fill="none" stroke="#1a2e5a" stroke-width="2.2" stroke-linejoin="round"/>
+        <path d="M6,14 L32,36 L58,14" fill="none" stroke="#1a2e5a" stroke-width="2.2" stroke-linejoin="round"/>
+        <path d="M6,14 L6,50 M58,14 L58,50" stroke="#1a2e5a" stroke-width="1.6" opacity="0.55"/>
+        <path d="M14,8 C18,12 24,11 32,14 C40,11 46,12 50,8" fill="none" stroke="#1a2e5a" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+      </g>
+    </defs>
+  </svg>
+
+  <nav class="top-nav">
+    <a href="index.html" class="nav-logo">Catherine.</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+      <li><a href="assets/resume.pdf" target="_blank" rel="noopener" class="nav-link">Resume</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-main">
+    <header class="page-header">
+      <h1 class="hand-title">Selected Work</h1>
+      <p class="page-lede">My portfolio includes personal works and school projects. I enjoy exploring AIGC, hoping to make AI-generated content feel more human.</p>
+    </header>
+
+    <section class="hub-section" aria-label="Portfolio hub">
+      <div class="hub-grid">
+        <a href="#section-aigc" class="hub-card scrap-card" style="--r: -2deg;">
+          <span class="tape tape-tl"><svg width="80" height="22" viewBox="0 0 80 22"><use href="#tape-strip"/></svg></span>
+          <svg class="pin pin-tr wiggle" width="64" height="16" viewBox="0 0 64 16"><use href="#safety-pin"/></svg>
+          <div class="hub-icon"><svg width="90" height="84" viewBox="0 0 72 64"><use href="#hub-clapper"/></svg></div>
+          <div class="hub-label hand-text">AIGC Video Creation</div>
+          <p class="hub-desc">Latent-diffusion reels, editorial motion, and AI-assisted short-film experiments.</p>
+          <div class="hub-arrow hand-text">Explore ↘</div>
+          <svg class="doodle-star-s wiggle hub-star" width="22" height="22" viewBox="0 0 24 24"><use href="#doodle-star"/></svg>
+        </a>
+
+        <a href="#section-posters" class="hub-card scrap-card" style="--r: 1.5deg;">
+          <span class="tape tape-tr"><svg width="80" height="22" viewBox="0 0 80 22"><use href="#tape-strip"/></svg></span>
+          <svg class="pin pin-tl wiggle" width="64" height="16" viewBox="0 0 64 16"><use href="#safety-pin"/></svg>
+          <div class="hub-icon"><svg width="84" height="86" viewBox="0 0 68 68"><use href="#hub-palette"/></svg></div>
+          <div class="hub-label hand-text">Poster Design</div>
+          <p class="hub-desc">Print, editorial, and cultural campaign posters — big visuals with warm, story-first layouts.</p>
+          <div class="hub-arrow hand-text">Browse ↘</div>
+          <svg class="doodle-star-s wiggle hub-star" width="20" height="20" viewBox="0 0 24 24"><use href="#doodle-star"/></svg>
+        </a>
+
+        <a href="#section-photovideo" class="hub-card scrap-card" style="--r: -1deg;">
+          <span class="tape tape-bl"><svg width="80" height="22" viewBox="0 0 80 22"><use href="#tape-strip"/></svg></span>
+          <svg class="pin pin-br wiggle" width="64" height="16" viewBox="0 0 64 16"><use href="#safety-pin"/></svg>
+          <div class="hub-icon"><svg width="84" height="86" viewBox="0 0 68 68"><use href="#hub-polaroid"/></svg></div>
+          <div class="hub-label hand-text">Photography &amp; Video</div>
+          <p class="hub-desc">35mm-inspired photographs and personal video projects, from silent portraits to solo class work.</p>
+          <div class="hub-arrow hand-text">View ↘</div>
+          <svg class="doodle-star-s wiggle hub-star" width="22" height="22" viewBox="0 0 24 24"><use href="#doodle-star"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <section id="section-aigc" class="category-section">
+      <div class="section-head">
+        <svg class="head-icon wiggle" width="40" height="40" viewBox="0 0 40 40"><use href="#hub-clapper"/></svg>
+        <h2 class="hand-heading">AIGC Video Creation</h2>
+        <svg class="head-arrow wiggle" width="56" height="36" viewBox="0 0 56 36"><use href="#doodle-arrow"/></svg>
+      </div>
+
+      <div class="aigc-grid">
+        <article class="aigc-card scrap-card">
+          <span class="tape tape-tl"><svg width="80" height="22" viewBox="0 0 80 22"><use href="#tape-strip"/></svg></span>
+          <span class="tape tape-br"><svg width="80" height="22" viewBox="0 0 80 22"><use href="#tape-strip"/></svg></span>
+          <svg class="pin pin-tr wiggle" width="64" height="16" viewBox="0 0 64 16"><use href="#safety-pin"/></svg>
+          <div class="project-media">
+            <video src="assets/ai-promo.mp4" controls autoplay loop muted playsinline style="width:100%; height:auto; border-radius:8px;"></video>
+          </div>
+          <div class="project-body">
+            <div class="project-tag hand-text">CASE 01 &mdash; RC Rulebook Animated Short</div>
+            <h3 class="project-title">RC Rulebook Animated Short</h3>
+            <p class="project-desc">An AIGC promotional short film introducing residential college rules. Created in Pixar-style 3D animation, the whole visual sequence was built with prompt engineering. It combines latent diffusion video clips and hand-animated titles, bringing college regulations to life with warm, approachable storytelling.</p>
+            <ul class="project-points">
+              <li><span>Role</span> Creative direction, prompt engineering, motion design</li>
+              <li><span>Tools</span> ComfyUI, After Effects, DaVinci Resolve</li>
+              <li><span>Year</span> 2026</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="aigc-card scrap-card">
+          <span class="tape tape-tr"><svg width="80" height="22" viewBox="0 0 80 22"><use href="#tape-strip"/></svg></span>
+          <span class="tape tape-bl"><svg width="80" height="22" viewBox="0 0 80 22"><use href="#tape-strip"/></svg></span>
+          <svg class="pin pin-tl wiggle" width="64" height="16" viewBox="0 0 64 16"><use href="#safety-pin"/></svg>
+          <div class="project-media">
+            <video src="assets/ai-promo2.mp4" controls autoplay loop muted playsinline style="width:100%; height:auto; border-radius:8px;"></video>
+          </div>
+          <div class="project-body">
+            <div class="project-tag hand-text">CASE 02 &mdash; Letters of RC Guidelines</div>
+            <h3 class="project-title">Letters of RC Guidelines</h3>
+            <p class="project-desc">AIGC-assisted editorial animation for residential college rule promotion. Handwritten-style text and paper textures are animated into living frames. I mixed typography and AI-generated environments to present campus guidelines in a gentle, personal narrative.</p>
+            <ul class="project-points">
+              <li><span>Role</span> Concept, art direction, motion editing</li>
+              <li><span>Tools</span> Runway, Midjourney, Premiere Pro</li>
+              <li><span>Year</span> 2026</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="section-posters" class="category-section">
+      <div class="section-head">
+        <svg class="head-icon wiggle" width="42" height="42" viewBox="0 0 68 68"><use href="#hub-palette"/></svg>
+        <h2 class="hand-heading">Poster Design</h2>
+      </div>
+
+      <div class="poster-grid">
+        <figure class="poster-card scrap-card">
+          <span class="tape tape-tl"><svg width="80" height="22" viewBox="0 0 80 22"><use href="#tape-strip"/></svg></span>
+          <svg class="pin pin-tr wiggle" width="64" height="16" viewBox="0 0 64 16"><use href="#safety-pin"/></svg>
+          <img src="assets/poster1.jpg" alt="Poster 1">
+        </figure>
+
+        <figure class="poster-card scrap-card">
+          <span class="tape tape-tr"><svg width="80" height="22" viewBox="0 0 80 22"><use href="#tape-strip"/></svg></span>
+          <svg class="pin pin-tl wiggle" width="64" height="16" viewBox="0 0 64 16"><use href="#safety-pin"/></svg>
+          <img src="assets/poster2.jpg" alt="Poster 2">
+        </figure>
+      </div>
+    </section>
+
+    <section id="section-photovideo" class="category-section">
+      <div class="section-head">
+        <svg class="head-icon wiggle" width="42" height="42" viewBox="0 0 68 68"><use href="#hub-polaroid"/></svg>
+        <h2 class="hand-heading">Photography &amp; Video</h2>
+      </div>
+
+      <div class="photovideo-grid">
+        <article class="photovideo-card scrap-card">
+          <span class="tape tape-tl"><svg width="80" height="22" viewBox="0 0 80 22"><use href="#tape-strip"/></svg></span>
+          <span class="tape tape-br"><svg width="80" height="22" viewBox="0 0 80 22"><use href="#tape-strip"/></svg></span>
+          <svg class="pin pin-br wiggle" width="64" height="16" viewBox="0 0 64 16"><use href="#safety-pin"/></svg>
+          <div class="project-media project-media--center">
+            <video src="assets/cmt2003 individual.mp4" controls autoplay loop muted playsinline style="width:100%; max-width:700px; height:auto; border-radius:8px;"></video>
+          </div>
+          <div class="project-body project-body--center">
+            <div class="project-tag hand-text">CHT2003 &middot; SOLO VIDEO PROJECT</div>
+            <h3 class="project-title">20-Minute Park Effect</h3>
+            <p class="project-desc">This is my individual class short, reflecting on the constant stress and quiet pressure we experience in daily life. The film explores how twenty minutes immersed in nature &mdash; a park, green space &mdash; can ease our anxious minds. Using self-shot footage, I experiment with camera work and editing rhythm to share this gentle, personal observation.</p>
+            <ul class="project-points project-points--compact">
+              <li><span>Role</span> Direction, camera, editing</li>
+              <li><span>Tools</span> Premiere Pro, DaVinci Resolve</li>
+              <li><span>Year</span> 2025</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="kraft-footer">
+    <div class="footer-inner">
+      <svg class="footer-envelope wiggle" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><use href="#doodle-envelope"/></svg>
+      <span class="footer-tag hand-text">Contact: cyyying1027@outlook.com</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
