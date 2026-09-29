@@ -26,6 +26,23 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  opacity: 0;
+  animation: pageFadeIn 0.35s var(--ease) both;
+  animation-delay: 10ms;
+  transition: opacity 0.2s var(--ease);
+  will-change: opacity;
+}
+
+body.is-leaving {
+  opacity: 0;
+}
+
+@keyframes pageFadeIn {
+  from { opacity: 0; transform: translateZ(0) translateY(4px); }
+  to   { opacity: 1; transform: translateZ(0) translateY(0); }
+}
+
 img,
 video {
   image-rendering: -webkit-optimize-contrast;

@@ -122,7 +122,28 @@
     });
   }
 
+  function initPageTransitions() {
+    const startLeave = function () {
+      document.body.classList.add('is-leaving');
+    };
+
+    window.addEventListener('beforeunload', startLeave);
+    window.addEventListener('pagehide', startLeave);
+
+    document.addEventListener('click', function (e) {
+      const link = e.target.closest && e.target.closest('a[href]');
+      if (!link) return;
+      const href = link.getAttribute('href');
+      if (!href || href.charAt(0) === '#') return;
+      if (link.target === '_blank' || link.hasAttribute('download')) return;
+      if (link.host && link.host !== window.location.host) return;
+      if (/^mailto:|^tel:|^javascript:/i.test(href)) return;
+      startLeave();
+    }, true);
+  }
+
   function boot() {
+    initPageTransitions();
     initVideoPlayer();
     initPopObservers();
     initHoverWiggleBoost();
