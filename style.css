@@ -42,6 +42,15 @@ video {
 img {
   transform: translateZ(0);
   backface-visibility: hidden;
+  opacity: 0;
+  animation: imgFadeIn 0.7s var(--ease) forwards;
+  animation-delay: 20ms;
+  background-color: rgba(236, 231, 215, 0.55);
+}
+
+@keyframes imgFadeIn {
+  from { opacity: 0; transform: translateZ(0) scale(1.008); filter: blur(1px); }
+  to   { opacity: 1; transform: translateZ(0) scale(1);     filter: blur(0); }
 }
 
 .paper-bg {
