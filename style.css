@@ -1001,14 +1001,14 @@ figcaption {
 .gzrb-photo-grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(7, minmax(42px, 1fr));
+  grid-template-rows: repeat(7, minmax(61px, 1fr));
   gap: 0;
   align-items: start;
   justify-items: start;
   width: 100%;
-  min-height: 590px;
-  max-width: 700px;
-  padding: 24px 10px 20px 34px;
+  min-height: 860px;
+  max-width: 1020px;
+  padding: 35px 15px 30px 50px;
   overflow: visible;
   position: relative;
 }
@@ -1021,7 +1021,7 @@ figcaption {
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 236px;
+  max-height: 342px;
   object-fit: contain;
 }
 
@@ -1031,7 +1031,7 @@ figcaption {
   --r: -2deg;
   --tx: 0px;
   --ty: 0px;
-  max-width: 252px;
+  max-width: 366px;
   z-index: 4;
   align-self: start;
   justify-self: start;
@@ -1041,9 +1041,9 @@ figcaption {
   grid-column: 4 / 8;
   grid-row: 1 / 4;
   --r: 2deg;
-  --tx: -24px;
-  --ty: 26px;
-  max-width: 252px;
+  --tx: -35px;
+  --ty: 38px;
+  max-width: 366px;
   z-index: 5;
   align-self: start;
   justify-self: start;
@@ -1053,9 +1053,9 @@ figcaption {
   grid-column: 1 / 5;
   grid-row: 4 / 7;
   --r: 1.5deg;
-  --tx: 32px;
-  --ty: -32px;
-  max-width: 252px;
+  --tx: 46px;
+  --ty: -46px;
+  max-width: 366px;
   z-index: 6;
   align-self: start;
   justify-self: start;
@@ -1065,9 +1065,9 @@ figcaption {
   grid-column: 4 / 8;
   grid-row: 4 / 7;
   --r: -2.5deg;
-  --tx: 2px;
-  --ty: -6px;
-  max-width: 252px;
+  --tx: 3px;
+  --ty: -9px;
+  max-width: 366px;
   z-index: 7;
   align-self: start;
   justify-self: start;
@@ -2383,15 +2383,15 @@ body.portfolio-view-detail #detail-views {
 
   .gzrb-photo-grid {
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(7, minmax(36px, 1fr));
+    grid-template-rows: repeat(7, minmax(52px, 1fr));
     gap: 0;
-    max-width: 640px;
-    min-height: 540px;
+    max-width: 930px;
+    min-height: 785px;
     margin: 0 auto;
-    padding: 22px 10px 18px 32px;
+    padding: 32px 15px 27px 47px;
   }
-  .gzrb-collage .frame-gzrb { max-width: 230px; }
-  .gzrb-collage .frame-gzrb img { max-height: 212px; }
+  .gzrb-collage .frame-gzrb { max-width: 334px; }
+  .gzrb-collage .frame-gzrb img { max-height: 308px; }
   .experience-entry,
   .experience-entry:nth-of-type(2) {
     grid-template-columns: 1fr;
@@ -2562,18 +2562,18 @@ body.portfolio-view-detail #detail-views {
 
   .gzrb-photo-grid {
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(7, minmax(34px, 1fr));
+    grid-template-rows: repeat(7, minmax(50px, 1fr));
     gap: 0;
-    max-width: 540px;
-    min-height: 480px;
+    max-width: 785px;
+    min-height: 700px;
     margin: 0 auto;
-    padding: 18px 10px 14px 26px;
+    padding: 27px 15px 21px 38px;
   }
   .gzrb-collage .frame-gzrb {
-    max-width: 200px;
+    max-width: 290px;
   }
   .gzrb-collage .frame-gzrb img {
-    max-height: 184px;
+    max-height: 268px;
   }
   .experience-entry {
     padding: 22px 20px 26px;
