@@ -45,8 +45,7 @@ body.is-leaving {
 
 img,
 video {
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
+  image-rendering: auto;
   image-orientation: from-image;
 }
 
