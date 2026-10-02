@@ -946,16 +946,17 @@ figcaption {
 }
 
 .shanghai-photo-grid {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, minmax(48px, 1fr));
   align-items: flex-start;
-  justify-content: center;
+  justify-items: center;
   width: 100%;
   min-height: 560px;
-  padding: 26px 0 22px 0;
+  max-width: 620px;
+  padding: 26px 10px 22px 10px;
   overflow: visible;
   position: relative;
-  flex-wrap: nowrap;
   gap: 0;
   margin: 0 auto;
 }
@@ -969,30 +970,42 @@ figcaption {
 }
 
 .shanghai-collage .frame-sh-1 {
+  grid-column: 1 / 6;
+  grid-row: 2 / 7;
   --r: -2deg;
-  --ty: 44px;
+  --ty: 0px;
   --tx: 0px;
   max-width: 280px;
   z-index: 4;
   margin-left: 0;
+  align-self: start;
+  justify-self: start;
 }
 
 .shanghai-collage .frame-sh-2 {
+  grid-column: 4 / 10;
+  grid-row: 1 / 6;
   --r: 1deg;
   --ty: 0px;
   --tx: 0px;
   max-width: 330px;
   z-index: 6;
-  margin-left: -32px;
+  margin-left: 0;
+  align-self: start;
+  justify-self: center;
 }
 
 .shanghai-collage .frame-sh-3 {
+  grid-column: 7 / 13;
+  grid-row: 5 / 11;
   --r: -3deg;
-  --ty: 46px;
+  --ty: 0px;
   --tx: 0px;
   max-width: 280px;
   z-index: 5;
-  margin-left: -32px;
+  margin-left: 0;
+  align-self: start;
+  justify-self: end;
 }
 
 /* ================================
@@ -1066,7 +1079,7 @@ figcaption {
 }
 
 .gzrb-collage .frame-gz-bl {
-  grid-column: 1 / 3;
+  grid-column: 3 / 5;
   grid-row: 4 / 7;
   --r: 1deg;
   --tx: 0px;
@@ -1074,7 +1087,7 @@ figcaption {
   max-width: 250px;
   z-index: 6;
   align-self: start;
-  justify-self: start;
+  justify-self: center;
   margin-top: -18px;
 }
 
