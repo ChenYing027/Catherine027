@@ -880,8 +880,8 @@ figcaption {
 }
 
 .polaroid-frame:hover {
-  transform: scale(1.15) rotate(0deg) translate(0, 0) !important;
-  z-index: 20 !important;
+  transform: scale(1.1) rotate(0deg) translate(0, 0) !important;
+  z-index: 30 !important;
   box-shadow:
     0 2px 0 rgba(51,45,41,0.05),
     0 20px 48px rgba(26,46,90,0.28),
@@ -889,188 +889,192 @@ figcaption {
   cursor: zoom-in;
 }
 
+/* ================================
+ * P1 — WHO I AM (spread, no subject overlap)
+ * ================================ */
 .top-photo-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, minmax(28px, 1fr));
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
   gap: 0;
   width: 100%;
-  min-height: 580px;
-  padding: 14px 6px 10px 12px;
+  min-height: 540px;
+  padding: 18px 10px 14px 12px;
   overflow: visible;
   position: relative;
+  flex-wrap: nowrap;
+}
+
+.shan-collage .polaroid-frame {
+  flex: 0 0 auto;
 }
 
 .shan-collage .frame-shan-1 {
-  grid-column: 1 / 7;
-  grid-row: 4 / 13;
-  --r: -2deg;
-  --ty: 4px;
-  --tx: 6px;
-  max-width: 250px;
-  align-self: start;
-  justify-self: start;
+  --r: -1.5deg;
+  --ty: 22px;
+  --tx: 0px;
+  max-width: 220px;
   z-index: 4;
+  margin-left: 0;
 }
 
 .shan-collage .frame-shan-2 {
-  grid-column: 4 / 10;
-  grid-row: 1 / 12;
-  --r: 0.5deg;
-  --ty: 0px;
+  --r: 0deg;
+  --ty: -12px;
   --tx: 0px;
-  max-width: 234px;
-  align-self: start;
-  justify-self: center;
+  max-width: 210px;
   z-index: 6;
+  margin-left: -15px;
 }
 
 .shan-collage .frame-shan-3 {
-  grid-column: 7 / 13;
-  grid-row: 4 / 13;
-  --r: 2deg;
-  --ty: 8px;
-  --tx: -6px;
-  max-width: 250px;
-  align-self: start;
-  justify-self: end;
+  --r: 1.5deg;
+  --ty: 24px;
+  --tx: 0px;
+  max-width: 220px;
   z-index: 4;
+  margin-left: -15px;
+}
+
+/* ================================
+ * P2 — SHANGHAI (tight card, compact)
+ * ================================ */
+.experience-entry {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .shanghai-photo-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(9, minmax(34px, 1fr));
-  gap: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
   width: 100%;
-  min-height: 580px;
-  padding: 22px 8px 18px 22px;
+  min-height: 400px;
+  padding: 12px 6px 10px 8px;
   overflow: visible;
   position: relative;
-}
-
-.shanghai-collage .frame-shanghai {
-  width: auto;
-  max-width: none;
+  flex-wrap: nowrap;
+  gap: 0;
 }
 
 .shanghai-collage .frame-shanghai img {
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 430px;
+  max-height: 280px;
   object-fit: contain;
 }
 
 .shanghai-collage .frame-sh-1 {
-  grid-column: 1 / 6;
-  grid-row: 3 / 10;
   --r: -2deg;
-  --ty: 10px;
-  --tx: 4px;
-  max-width: 252px;
-  align-self: start;
-  justify-self: start;
+  --ty: 22px;
+  --tx: 0px;
+  max-width: 170px;
   z-index: 4;
+  margin-left: 0;
 }
 
 .shanghai-collage .frame-sh-2 {
-  grid-column: 4 / 10;
-  grid-row: 1 / 7;
   --r: 1deg;
-  --ty: 0px;
-  --tx: 6px;
-  max-width: 302px;
-  align-self: start;
-  justify-self: center;
+  --ty: -4px;
+  --tx: 0px;
+  max-width: 200px;
   z-index: 6;
+  margin-left: -18px;
 }
 
 .shanghai-collage .frame-sh-3 {
-  grid-column: 7 / 13;
-  grid-row: 3 / 10;
   --r: -3deg;
-  --ty: 16px;
-  --tx: -6px;
-  max-width: 256px;
-  align-self: start;
-  justify-self: end;
+  --ty: 26px;
+  --tx: 0px;
+  max-width: 170px;
   z-index: 5;
+  margin-left: -18px;
 }
 
+/* ================================
+ * P3 — GUANGZHOU DAILY (new collage)
+ * Layout: 3 vertical (9:16) + 1 horizontal (4:3) center
+ * Top: gz-1 (TL vertical) | gz-2 (TR vertical)
+ * Mid: gz-3 (CENTER horizontal overlapping junction)
+ * Bot: gz-4 (BL vertical)
+ * ================================ */
 .gzrb-photo-grid {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(7, minmax(52px, 1fr));
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, minmax(38px, 1fr));
   gap: 0;
   align-items: start;
   justify-items: start;
   width: 100%;
-  min-height: 720px;
-  max-width: 840px;
-  padding: 30px 16px 24px 44px;
+  min-height: 380px;
+  max-height: 400px;
+  max-width: 560px;
+  padding: 18px 12px 16px 20px;
   overflow: visible;
   position: relative;
-}
-
-.gzrb-collage .frame-gzrb {
-  width: auto;
+  margin: 0 auto;
 }
 
 .gzrb-collage .frame-gzrb img {
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 288px;
+  max-height: 230px;
   object-fit: contain;
 }
 
-.gzrb-collage .frame-gz-1 {
-  grid-column: 1 / 5;
-  grid-row: 1 / 4;
+.gzrb-collage .frame-gz-tl {
+  grid-column: 1 / 3;
+  grid-row: 1 / 5;
   --r: -2deg;
   --tx: 0px;
   --ty: 0px;
-  max-width: 270px;
+  max-width: 155px;
   z-index: 4;
   align-self: start;
   justify-self: start;
 }
 
-.gzrb-collage .frame-gz-2 {
-  grid-column: 4 / 8;
-  grid-row: 1 / 4;
+.gzrb-collage .frame-gz-tr {
+  grid-column: 4 / 6;
+  grid-row: 1 / 5;
   --r: 2deg;
-  --tx: -32px;
-  --ty: 32px;
-  max-width: 202px;
+  --tx: 0px;
+  --ty: 0px;
+  max-width: 155px;
   z-index: 5;
   align-self: start;
-  justify-self: start;
+  justify-self: end;
+  margin-left: -8px;
 }
 
-.gzrb-collage .frame-gz-3 {
-  grid-column: 1 / 5;
+.gzrb-collage .frame-gz-center {
+  grid-column: 2 / 6;
+  grid-row: 3 / 5;
+  --r: 0.5deg;
+  --tx: 0px;
+  --ty: 0px;
+  max-width: 230px;
+  z-index: 8;
+  align-self: start;
+  justify-self: center;
+  margin-top: -6px;
+}
+
+.gzrb-collage .frame-gz-bl {
+  grid-column: 1 / 3;
   grid-row: 4 / 7;
-  --r: 1.5deg;
-  --tx: 22px;
-  --ty: -14px;
-  max-width: 216px;
+  --r: 1deg;
+  --tx: 0px;
+  --ty: 0px;
+  max-width: 155px;
   z-index: 6;
   align-self: start;
   justify-self: start;
-}
-
-.gzrb-collage .frame-gz-4 {
-  grid-column: 4 / 8;
-  grid-row: 4 / 7;
-  --r: -2.5deg;
-  --tx: -26px;
-  --ty: 14px;
-  max-width: 216px;
-  z-index: 7;
-  align-self: start;
-  justify-self: start;
+  margin-top: -10px;
 }
 
 .photo-strip-collage {
@@ -2353,48 +2357,40 @@ body.portfolio-view-detail #detail-views {
     z-index: initial;
   }
   .top-photo-grid {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, minmax(24px, 1fr));
-    gap: 0;
-    max-width: 680px;
-    min-height: 520px;
+    min-height: 480px;
+    max-width: 620px;
     margin: 0 auto;
-    padding: 14px 6px 10px 14px;
+    padding: 16px 8px 12px 10px;
   }
-  .shan-collage .frame-shan-1 { max-width: 220px; }
-  .shan-collage .frame-shan-2 { max-width: 208px; }
-  .shan-collage .frame-shan-3 { max-width: 220px; }
+  .shan-collage .frame-shan-1 { max-width: 196px; }
+  .shan-collage .frame-shan-2 { max-width: 188px; }
+  .shan-collage .frame-shan-3 { max-width: 196px; }
 
   .shanghai-photo-grid {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(9, minmax(28px, 1fr));
-    gap: 0;
-    max-width: 720px;
-    min-height: 520px;
+    min-height: 360px;
+    max-width: 520px;
     margin: 0 auto;
-    padding: 22px 8px 18px 22px;
+    padding: 12px 6px 10px 8px;
   }
-  .shanghai-collage .frame-shanghai img {
-    max-height: 378px;
-  }
-  .shanghai-collage .frame-sh-1 { max-width: 222px; }
-  .shanghai-collage .frame-sh-2 { max-width: 268px; }
-  .shanghai-collage .frame-sh-3 { max-width: 226px; }
+  .shanghai-collage .frame-shanghai img { max-height: 252px; }
+  .shanghai-collage .frame-sh-1 { max-width: 156px; }
+  .shanghai-collage .frame-sh-2 { max-width: 184px; }
+  .shanghai-collage .frame-sh-3 { max-width: 156px; }
 
   .gzrb-photo-grid {
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(7, minmax(46px, 1fr));
-    gap: 0;
-    max-width: 770px;
-    min-height: 650px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, minmax(34px, 1fr));
+    min-height: 360px;
+    max-height: 380px;
+    max-width: 520px;
     margin: 0 auto;
-    padding: 28px 16px 22px 40px;
+    padding: 16px 10px 14px 18px;
   }
-  .gzrb-collage .frame-gz-1 { max-width: 248px; }
-  .gzrb-collage .frame-gz-2 { max-width: 186px; }
-  .gzrb-collage .frame-gz-3 { max-width: 198px; }
-  .gzrb-collage .frame-gz-4 { max-width: 198px; }
-  .gzrb-collage .frame-gzrb img { max-height: 264px; }
+  .gzrb-collage .frame-gz-tl { max-width: 144px; }
+  .gzrb-collage .frame-gz-tr { max-width: 144px; }
+  .gzrb-collage .frame-gz-center { max-width: 212px; }
+  .gzrb-collage .frame-gz-bl { max-width: 144px; }
+  .gzrb-collage .frame-gzrb img { max-height: 212px; }
   .experience-entry,
   .experience-entry:nth-of-type(2) {
     grid-template-columns: 1fr;
@@ -2535,50 +2531,40 @@ body.portfolio-view-detail #detail-views {
     grid-template-columns: 1fr;
   }
   .top-photo-grid {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, minmax(22px, 1fr));
-    gap: 0;
-    max-width: 490px;
-    min-height: 460px;
+    min-height: 420px;
+    max-width: 520px;
     margin: 0 auto;
-    padding: 14px 6px 10px 14px;
+    padding: 14px 8px 12px 10px;
   }
-  .shan-collage .frame-shan-1 { max-width: 180px; }
-  .shan-collage .frame-shan-2 { max-width: 172px; }
-  .shan-collage .frame-shan-3 { max-width: 180px; }
+  .shan-collage .frame-shan-1 { max-width: 170px; }
+  .shan-collage .frame-shan-2 { max-width: 162px; }
+  .shan-collage .frame-shan-3 { max-width: 170px; }
 
   .shanghai-photo-grid {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(9, minmax(24px, 1fr));
-    gap: 0;
-    max-width: 510px;
-    min-height: 460px;
+    min-height: 320px;
+    max-width: 440px;
     margin: 0 auto;
-    padding: 16px 6px 14px 16px;
+    padding: 12px 6px 10px 8px;
   }
-  .shanghai-collage .frame-shanghai img {
-    max-height: 310px;
-  }
-  .shanghai-collage .frame-sh-1 { max-width: 184px; }
-  .shanghai-collage .frame-sh-2 { max-width: 222px; }
-  .shanghai-collage .frame-sh-3 { max-width: 190px; }
+  .shanghai-collage .frame-shanghai img { max-height: 220px; }
+  .shanghai-collage .frame-sh-1 { max-width: 136px; }
+  .shanghai-collage .frame-sh-2 { max-width: 160px; }
+  .shanghai-collage .frame-sh-3 { max-width: 136px; }
 
   .gzrb-photo-grid {
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(7, minmax(44px, 1fr));
-    gap: 0;
-    max-width: 660px;
-    min-height: 600px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, minmax(30px, 1fr));
+    min-height: 340px;
+    max-height: 360px;
+    max-width: 460px;
     margin: 0 auto;
-    padding: 24px 14px 20px 34px;
+    padding: 14px 10px 12px 16px;
   }
-  .gzrb-collage .frame-gz-1 { max-width: 212px; }
-  .gzrb-collage .frame-gz-2 { max-width: 158px; }
-  .gzrb-collage .frame-gz-3 { max-width: 170px; }
-  .gzrb-collage .frame-gz-4 { max-width: 170px; }
-  .gzrb-collage .frame-gzrb img {
-    max-height: 226px;
-  }
+  .gzrb-collage .frame-gz-tl { max-width: 128px; }
+  .gzrb-collage .frame-gz-tr { max-width: 128px; }
+  .gzrb-collage .frame-gz-center { max-width: 188px; }
+  .gzrb-collage .frame-gz-bl { max-width: 128px; }
+  .gzrb-collage .frame-gzrb img { max-height: 188px; }
   .experience-entry {
     padding: 22px 20px 26px;
   }
