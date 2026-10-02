@@ -973,9 +973,9 @@ figcaption {
   grid-column: 1 / 6;
   grid-row: 2 / 7;
   --r: -2deg;
-  --ty: 0px;
+  --ty: 24px;
   --tx: 0px;
-  max-width: 280px;
+  max-width: 296px;
   z-index: 4;
   margin-left: 0;
   align-self: start;
@@ -1088,7 +1088,7 @@ figcaption {
   z-index: 6;
   align-self: start;
   justify-self: center;
-  margin-top: -18px;
+  margin-top: 14px;
 }
 
 .photo-strip-collage {
