@@ -808,7 +808,7 @@ figcaption {
 .photo-strip-collage {
   display: block;
   position: relative;
-  min-height: 620px;
+  min-height: 520px;
   height: auto;
   overflow: visible;
   width: 100%;
@@ -823,32 +823,32 @@ figcaption {
   overflow: visible;
   height: auto;
   box-shadow:
-    0 1px 0 rgba(26,26,26,0.03),
-    0 14px 30px rgba(26,26,26,0.16),
-    0 4px 10px rgba(26,26,26,0.08);
+    0 2px 0 rgba(26,46,90,0.04),
+    0 10px 22px rgba(26,46,90,0.12),
+    0 3px 8px rgba(26,46,90,0.06);
   transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
   transform: rotate(var(--r, 0deg));
 }
 
 .photo-strip-collage .strip-1 {
-  top: 10px;
-  left: 0px;
-  width: 56%;
-  max-width: 310px;
+  top: 20px;
+  left: 18%;
+  width: 54%;
+  max-width: 290px;
 }
 
 .photo-strip-collage .strip-2 {
-  top: 180px;
-  left: 38%;
-  width: 58%;
-  max-width: 320px;
+  top: 150px;
+  left: 42%;
+  width: 56%;
+  max-width: 300px;
 }
 
 .photo-strip-collage .strip-3 {
-  top: 360px;
-  left: 4%;
-  width: 54%;
-  max-width: 300px;
+  top: 280px;
+  left: 22%;
+  width: 52%;
+  max-width: 280px;
 }
 
 .photo-strip-collage .strip-img:hover {
@@ -905,8 +905,8 @@ figcaption {
   display: grid;
   grid-template-columns: 1.15fr 1fr;
   gap: 32px;
-  align-items: stretch;
-  padding: 28px 30px 30px;
+  align-items: center;
+  padding: 32px 30px 34px;
 }
 
 .experience-entry:nth-of-type(2) {
@@ -985,8 +985,10 @@ figcaption {
 
 .experience-polaroids {
   position: relative;
-  min-height: 360px;
-  padding: 10px 6px 20px;
+  min-height: 420px;
+  padding: 14px 8px 22px;
+  display: block;
+  width: 100%;
 }
 
 .exp-polaroid {
@@ -1107,29 +1109,29 @@ figcaption {
 }
 
 .exp-p1 {
-  top: 4px;
+  top: 8px;
   left: 0px;
-  width: 46%;
+  width: 44%;
   max-width: 220px;
 }
 
 .exp-p2 {
-  top: 54px;
-  left: 30%;
-  width: 52%;
-  max-width: 240px;
+  top: 70px;
+  left: 32%;
+  width: 50%;
+  max-width: 230px;
 }
 
 .exp-p3 {
-  top: 208px;
-  left: 8%;
-  width: 46%;
+  top: 170px;
+  left: 10%;
+  width: 44%;
   max-width: 210px;
 }
 
 .exp-p4 {
-  top: 262px;
-  left: 44%;
+  top: 225px;
+  left: 42%;
   width: 44%;
   max-width: 210px;
 }
@@ -1913,11 +1915,17 @@ figcaption {
 
 .brand-stack {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 28px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
   max-width: 1220px;
   margin: 0 auto;
   perspective: 1000px;
+  align-items: stretch;
+}
+.brand-stack .brand-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .brand-card {
@@ -2131,25 +2139,25 @@ figcaption {
     gap: 40px;
   }
   .photo-strip-collage {
-    min-height: 700px;
+    min-height: 620px;
   }
   .photo-strip-collage .strip-1 {
     top: 12px;
-    left: 0px;
-    width: 58%;
-    max-width: 310px;
+    left: 14%;
+    width: 54%;
+    max-width: 290px;
   }
   .photo-strip-collage .strip-2 {
-    top: 200px;
-    left: 34%;
-    width: 60%;
-    max-width: 320px;
-  }
-  .photo-strip-collage .strip-3 {
-    top: 400px;
-    left: 6%;
+    top: 190px;
+    left: 40%;
     width: 56%;
     max-width: 300px;
+  }
+  .photo-strip-collage .strip-3 {
+    top: 360px;
+    left: 18%;
+    width: 52%;
+    max-width: 280px;
   }
   .experience-entry,
   .experience-entry:nth-of-type(2) {
@@ -2161,12 +2169,12 @@ figcaption {
     order: initial;
   }
   .experience-polaroids {
-    min-height: 400px;
+    min-height: 440px;
     max-width: 520px;
     margin: 0 auto;
   }
   .exp-p4 {
-    top: 220px;
+    top: 230px;
     left: 46%;
     width: 46%;
     max-width: 210px;
@@ -2282,31 +2290,31 @@ figcaption {
     grid-template-columns: 1fr;
   }
   .photo-strip-collage {
-    min-height: 820px;
+    min-height: 740px;
   }
   .photo-strip-collage .strip-1 {
     top: 8px;
-    left: 0px;
-    width: 72%;
-    max-width: 300px;
-  }
-  .photo-strip-collage .strip-2 {
-    top: 230px;
-    left: 18%;
-    width: 76%;
-    max-width: 310px;
-  }
-  .photo-strip-collage .strip-3 {
-    top: 480px;
     left: 6%;
     width: 70%;
     max-width: 290px;
   }
+  .photo-strip-collage .strip-2 {
+    top: 230px;
+    left: 22%;
+    width: 72%;
+    max-width: 300px;
+  }
+  .photo-strip-collage .strip-3 {
+    top: 460px;
+    left: 10%;
+    width: 68%;
+    max-width: 280px;
+  }
   .experience-entry {
-    padding: 24px 22px 26px;
+    padding: 24px 22px 28px;
   }
   .experience-polaroids {
-    min-height: 460px;
+    min-height: 500px;
     max-width: 420px;
     margin: 0 auto;
   }
@@ -2323,14 +2331,14 @@ figcaption {
     max-width: 220px;
   }
   .exp-p3 {
-    top: 260px;
+    top: 250px;
     left: 4%;
     width: 54%;
     max-width: 200px;
   }
   .exp-p4 {
-    top: 340px;
-    left: 38%;
+    top: 320px;
+    left: 36%;
     width: 56%;
     max-width: 200px;
   }
@@ -2380,6 +2388,10 @@ figcaption {
     flex: 1 1 auto;
     max-width: 100%;
     padding: 24px 20px 18px;
+  }
+  .brand-stack {
+    grid-template-columns: 1fr;
+    gap: 22px;
   }
   .poster-grid {
     grid-template-columns: 1fr;
