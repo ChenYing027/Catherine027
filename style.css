@@ -951,47 +951,48 @@ figcaption {
   align-items: flex-start;
   justify-content: center;
   width: 100%;
-  min-height: 400px;
-  padding: 12px 6px 10px 8px;
+  min-height: 470px;
+  padding: 22px 4px 18px 4px;
   overflow: visible;
   position: relative;
   flex-wrap: nowrap;
   gap: 0;
+  margin: 0 auto;
 }
 
 .shanghai-collage .frame-shanghai img {
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 280px;
+  max-height: 360px;
   object-fit: contain;
 }
 
 .shanghai-collage .frame-sh-1 {
   --r: -2deg;
-  --ty: 22px;
+  --ty: 34px;
   --tx: 0px;
-  max-width: 170px;
+  max-width: 230px;
   z-index: 4;
   margin-left: 0;
 }
 
 .shanghai-collage .frame-sh-2 {
   --r: 1deg;
-  --ty: -4px;
+  --ty: 0px;
   --tx: 0px;
-  max-width: 200px;
+  max-width: 270px;
   z-index: 6;
-  margin-left: -18px;
+  margin-left: -24px;
 }
 
 .shanghai-collage .frame-sh-3 {
   --r: -3deg;
-  --ty: 26px;
+  --ty: 36px;
   --tx: 0px;
-  max-width: 170px;
+  max-width: 230px;
   z-index: 5;
-  margin-left: -18px;
+  margin-left: -24px;
 }
 
 /* ================================
@@ -1004,15 +1005,15 @@ figcaption {
 .gzrb-photo-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, minmax(38px, 1fr));
+  grid-template-rows: repeat(6, minmax(48px, 1fr));
   gap: 0;
   align-items: start;
   justify-items: start;
   width: 100%;
-  min-height: 380px;
-  max-height: 400px;
-  max-width: 560px;
-  padding: 18px 12px 16px 20px;
+  min-height: 480px;
+  max-height: 500px;
+  max-width: 690px;
+  padding: 22px 14px 18px 24px;
   overflow: visible;
   position: relative;
   margin: 0 auto;
@@ -1022,7 +1023,7 @@ figcaption {
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 230px;
+  max-height: 300px;
   object-fit: contain;
 }
 
@@ -1032,7 +1033,7 @@ figcaption {
   --r: -2deg;
   --tx: 0px;
   --ty: 0px;
-  max-width: 155px;
+  max-width: 205px;
   z-index: 4;
   align-self: start;
   justify-self: start;
@@ -1044,11 +1045,11 @@ figcaption {
   --r: 2deg;
   --tx: 0px;
   --ty: 0px;
-  max-width: 155px;
+  max-width: 205px;
   z-index: 5;
   align-self: start;
   justify-self: end;
-  margin-left: -8px;
+  margin-left: -12px;
 }
 
 .gzrb-collage .frame-gz-center {
@@ -1057,11 +1058,11 @@ figcaption {
   --r: 0.5deg;
   --tx: 0px;
   --ty: 0px;
-  max-width: 230px;
+  max-width: 300px;
   z-index: 8;
   align-self: start;
   justify-self: center;
-  margin-top: -6px;
+  margin-top: -8px;
 }
 
 .gzrb-collage .frame-gz-bl {
@@ -1070,11 +1071,11 @@ figcaption {
   --r: 1deg;
   --tx: 0px;
   --ty: 0px;
-  max-width: 155px;
+  max-width: 205px;
   z-index: 6;
   align-self: start;
   justify-self: start;
-  margin-top: -10px;
+  margin-top: -14px;
 }
 
 .photo-strip-collage {
@@ -1130,6 +1131,9 @@ figcaption {
   isolation: isolate;
   overflow: visible;
   min-width: 0;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
   padding: 10px 6px;
 }
 
@@ -2367,30 +2371,30 @@ body.portfolio-view-detail #detail-views {
   .shan-collage .frame-shan-3 { max-width: 196px; }
 
   .shanghai-photo-grid {
-    min-height: 360px;
-    max-width: 520px;
+    min-height: 420px;
+    max-width: 620px;
     margin: 0 auto;
-    padding: 12px 6px 10px 8px;
+    padding: 18px 4px 14px 4px;
   }
-  .shanghai-collage .frame-shanghai img { max-height: 252px; }
-  .shanghai-collage .frame-sh-1 { max-width: 156px; }
-  .shanghai-collage .frame-sh-2 { max-width: 184px; }
-  .shanghai-collage .frame-sh-3 { max-width: 156px; }
+  .shanghai-collage .frame-shanghai img { max-height: 320px; }
+  .shanghai-collage .frame-sh-1 { max-width: 204px; }
+  .shanghai-collage .frame-sh-2 { max-width: 240px; }
+  .shanghai-collage .frame-sh-3 { max-width: 204px; }
 
   .gzrb-photo-grid {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, minmax(34px, 1fr));
-    min-height: 360px;
-    max-height: 380px;
-    max-width: 520px;
+    grid-template-rows: repeat(6, minmax(42px, 1fr));
+    min-height: 430px;
+    max-height: 460px;
+    max-width: 620px;
     margin: 0 auto;
-    padding: 16px 10px 14px 18px;
+    padding: 20px 12px 16px 22px;
   }
-  .gzrb-collage .frame-gz-tl { max-width: 144px; }
-  .gzrb-collage .frame-gz-tr { max-width: 144px; }
-  .gzrb-collage .frame-gz-center { max-width: 212px; }
-  .gzrb-collage .frame-gz-bl { max-width: 144px; }
-  .gzrb-collage .frame-gzrb img { max-height: 212px; }
+  .gzrb-collage .frame-gz-tl { max-width: 184px; }
+  .gzrb-collage .frame-gz-tr { max-width: 184px; }
+  .gzrb-collage .frame-gz-center { max-width: 270px; }
+  .gzrb-collage .frame-gz-bl { max-width: 184px; }
+  .gzrb-collage .frame-gzrb img { max-height: 270px; }
   .experience-entry,
   .experience-entry:nth-of-type(2) {
     grid-template-columns: 1fr;
@@ -2541,30 +2545,30 @@ body.portfolio-view-detail #detail-views {
   .shan-collage .frame-shan-3 { max-width: 170px; }
 
   .shanghai-photo-grid {
-    min-height: 320px;
-    max-width: 440px;
+    min-height: 360px;
+    max-width: 520px;
     margin: 0 auto;
-    padding: 12px 6px 10px 8px;
+    padding: 14px 4px 12px 4px;
   }
-  .shanghai-collage .frame-shanghai img { max-height: 220px; }
-  .shanghai-collage .frame-sh-1 { max-width: 136px; }
-  .shanghai-collage .frame-sh-2 { max-width: 160px; }
-  .shanghai-collage .frame-sh-3 { max-width: 136px; }
+  .shanghai-collage .frame-shanghai img { max-height: 270px; }
+  .shanghai-collage .frame-sh-1 { max-width: 174px; }
+  .shanghai-collage .frame-sh-2 { max-width: 204px; }
+  .shanghai-collage .frame-sh-3 { max-width: 174px; }
 
   .gzrb-photo-grid {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, minmax(30px, 1fr));
-    min-height: 340px;
-    max-height: 360px;
-    max-width: 460px;
+    grid-template-rows: repeat(6, minmax(36px, 1fr));
+    min-height: 390px;
+    max-height: 420px;
+    max-width: 540px;
     margin: 0 auto;
-    padding: 14px 10px 12px 16px;
+    padding: 18px 10px 14px 18px;
   }
-  .gzrb-collage .frame-gz-tl { max-width: 128px; }
-  .gzrb-collage .frame-gz-tr { max-width: 128px; }
-  .gzrb-collage .frame-gz-center { max-width: 188px; }
-  .gzrb-collage .frame-gz-bl { max-width: 128px; }
-  .gzrb-collage .frame-gzrb img { max-height: 188px; }
+  .gzrb-collage .frame-gz-tl { max-width: 160px; }
+  .gzrb-collage .frame-gz-tr { max-width: 160px; }
+  .gzrb-collage .frame-gz-center { max-width: 236px; }
+  .gzrb-collage .frame-gz-bl { max-width: 160px; }
+  .gzrb-collage .frame-gzrb img { max-height: 236px; }
   .experience-entry {
     padding: 22px 20px 26px;
   }
