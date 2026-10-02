@@ -692,6 +692,20 @@ figcaption {
   margin-bottom: 88px;
 }
 
+.about-split > article:first-child {
+  position: relative;
+  z-index: 10;
+  isolation: isolate;
+}
+
+.about-split > aside {
+  position: relative;
+  isolation: isolate;
+  overflow: visible;
+  padding: 10px 10px;
+  min-height: 260px;
+}
+
 .scrap-card {
   position: relative;
   background: #fffdf7;
@@ -805,7 +819,7 @@ figcaption {
   align-items: start;
 }
 
-.hand-drawn-frame {
+.polaroid-frame {
   position: relative;
   display: inline-block;
   background: #fcfbf7;
@@ -815,12 +829,14 @@ figcaption {
   box-shadow:
     2px 3px 0px rgba(51, 45, 41, 0.18),
     0 10px 24px rgba(26, 46, 90, 0.10);
-  transform: rotate(var(--r, 0deg));
-  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+  transform: rotate(var(--r, -1.5deg));
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease, z-index 0s;
   max-width: 100%;
+  z-index: 1;
+  isolation: isolate;
 }
 
-.hand-drawn-frame::before {
+.polaroid-frame::before {
   content: "";
   position: absolute;
   top: -14px;
@@ -842,7 +858,7 @@ figcaption {
   z-index: 4;
 }
 
-.hand-drawn-frame::after {
+.polaroid-frame::after {
   content: "";
   position: absolute;
   top: -10px;
@@ -860,22 +876,22 @@ figcaption {
   z-index: 5;
 }
 
-.hand-drawn-frame img {
+.polaroid-frame img {
   display: block;
   width: auto;
   height: auto;
   max-width: 100%;
   max-height: none;
-  object-fit: unset;
+  object-fit: contain;
   object-position: unset;
   border-radius: 1px;
 }
 
-.hand-drawn-frame:hover {
-  transform: rotate(0deg) translateY(-2px) scale(1.01);
-  box-shadow:
-    3px 4px 0px rgba(51, 45, 41, 0.22),
-    0 16px 32px rgba(26, 46, 90, 0.14);
+.polaroid-frame:hover {
+  transform: scale(1.18) rotate(0deg);
+  z-index: 20;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+  cursor: pointer;
 }
 
 .top-photo-grid {
@@ -886,11 +902,13 @@ figcaption {
   align-items: flex-start;
   gap: 24px;
   width: 100%;
+  padding: 18px 4px;
+  overflow: visible;
 }
 
-.top-photo-grid .hand-drawn-frame:nth-child(1) { --r: -2deg; flex: 1 1 42%; max-width: 280px; }
-.top-photo-grid .hand-drawn-frame:nth-child(2) { --r:  1.5deg; flex: 1 1 42%; max-width: 280px; }
-.top-photo-grid .hand-drawn-frame:nth-child(3) { --r: -1deg; flex: 1 1 100%; max-width: 420px; margin-top: -4px; }
+.top-photo-grid .polaroid-frame:nth-child(1) { --r: -1.5deg; flex: 1 1 42%; max-width: 260px; }
+.top-photo-grid .polaroid-frame:nth-child(2) { --r:  1.5deg; flex: 1 1 42%; max-width: 260px; }
+.top-photo-grid .polaroid-frame:nth-child(3) { --r: -1.5deg; flex: 1 1 100%; max-width: 400px; margin-top: -4px; }
 
 .shanghai-photo-grid {
   display: flex;
@@ -900,17 +918,18 @@ figcaption {
   align-items: flex-start;
   gap: 20px;
   width: 100%;
-  padding: 6px 4px;
+  padding: 18px 4px;
+  overflow: visible;
 }
 
-.shanghai-photo-grid .hand-drawn-frame {
+.shanghai-photo-grid .polaroid-frame {
   flex: 1 1 30%;
-  max-width: 240px;
+  max-width: 220px;
 }
 
-.shanghai-photo-grid .hand-drawn-frame:nth-child(1) { --r: -2deg; }
-.shanghai-photo-grid .hand-drawn-frame:nth-child(2) { --r:  1.5deg; }
-.shanghai-photo-grid .hand-drawn-frame:nth-child(3) { --r: -1.2deg; }
+.shanghai-photo-grid .polaroid-frame:nth-child(1) { --r: -1.5deg; }
+.shanghai-photo-grid .polaroid-frame:nth-child(2) { --r:  1.5deg; }
+.shanghai-photo-grid .polaroid-frame:nth-child(3) { --r: -1.5deg; }
 
 .gzrb-photo-grid {
   display: grid;
@@ -920,18 +939,19 @@ figcaption {
   align-items: start;
   justify-items: center;
   width: 100%;
-  padding: 6px 4px;
+  padding: 18px 4px;
+  overflow: visible;
 }
 
-.gzrb-photo-grid .hand-drawn-frame {
+.gzrb-photo-grid .polaroid-frame {
   width: 100%;
-  max-width: 240px;
+  max-width: 220px;
 }
 
-.gzrb-photo-grid .hand-drawn-frame:nth-child(1) { --r: -1.8deg; }
-.gzrb-photo-grid .hand-drawn-frame:nth-child(2) { --r:  1.6deg; }
-.gzrb-photo-grid .hand-drawn-frame:nth-child(3) { --r:  1.2deg; }
-.gzrb-photo-grid .hand-drawn-frame:nth-child(4) { --r: -1deg; }
+.gzrb-photo-grid .polaroid-frame:nth-child(1) { --r: -1.5deg; }
+.gzrb-photo-grid .polaroid-frame:nth-child(2) { --r:  1.5deg; }
+.gzrb-photo-grid .polaroid-frame:nth-child(3) { --r:  1.5deg; }
+.gzrb-photo-grid .polaroid-frame:nth-child(4) { --r: -1.5deg; }
 
 .photo-strip-collage {
   display: block;
@@ -964,10 +984,29 @@ figcaption {
   gap: 32px;
   align-items: center;
   padding: 32px 30px 34px;
+  overflow: visible;
+  position: relative;
+  isolation: isolate;
 }
 
 .experience-entry:nth-of-type(2) {
   grid-template-columns: 1fr 1.15fr;
+}
+
+.experience-entry > .experience-content {
+  position: relative;
+  z-index: 10;
+  isolation: isolate;
+  min-width: 0;
+}
+
+.experience-entry > .experience-polaroids {
+  position: relative;
+  z-index: 2;
+  isolation: isolate;
+  overflow: visible;
+  min-width: 0;
+  padding: 10px 6px;
 }
 
 .experience-entry:nth-of-type(2) .experience-content {
@@ -2189,6 +2228,10 @@ body.portfolio-view-detail #detail-views {
     grid-template-columns: 1fr;
     gap: 36px;
   }
+  .about-split > article:first-child,
+  .about-split > aside {
+    z-index: initial;
+  }
   .top-photo-grid {
     flex-direction: row;
     flex-wrap: wrap;
@@ -2196,28 +2239,28 @@ body.portfolio-view-detail #detail-views {
     max-width: 560px;
     margin: 0 auto;
   }
-  .top-photo-grid .hand-drawn-frame:nth-child(1),
-  .top-photo-grid .hand-drawn-frame:nth-child(2) {
-    max-width: 260px;
+  .top-photo-grid .polaroid-frame:nth-child(1),
+  .top-photo-grid .polaroid-frame:nth-child(2) {
+    max-width: 240px;
   }
-  .top-photo-grid .hand-drawn-frame:nth-child(3) {
-    max-width: 380px;
+  .top-photo-grid .polaroid-frame:nth-child(3) {
+    max-width: 360px;
   }
   .shanghai-photo-grid {
     gap: 18px;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .shanghai-photo-grid .hand-drawn-frame {
-    max-width: 220px;
+  .shanghai-photo-grid .polaroid-frame {
+    max-width: 200px;
   }
   .gzrb-photo-grid {
     gap: 18px 20px;
     max-width: 540px;
     margin: 0 auto;
   }
-  .gzrb-photo-grid .hand-drawn-frame {
-    max-width: 220px;
+  .gzrb-photo-grid .polaroid-frame {
+    max-width: 200px;
   }
   .experience-entry,
   .experience-entry:nth-of-type(2) {
@@ -2227,6 +2270,10 @@ body.portfolio-view-detail #detail-views {
   .experience-entry:nth-of-type(2) .experience-content,
   .experience-entry:nth-of-type(2) .experience-polaroids {
     order: initial;
+  }
+  .experience-entry > .experience-content,
+  .experience-entry > .experience-polaroids {
+    z-index: initial;
   }
   .experience-polaroids {
     min-height: 0;
@@ -2360,9 +2407,9 @@ body.portfolio-view-detail #detail-views {
     max-width: 360px;
     margin: 0 auto;
   }
-  .top-photo-grid .hand-drawn-frame:nth-child(1),
-  .top-photo-grid .hand-drawn-frame:nth-child(2),
-  .top-photo-grid .hand-drawn-frame:nth-child(3) {
+  .top-photo-grid .polaroid-frame:nth-child(1),
+  .top-photo-grid .polaroid-frame:nth-child(2),
+  .top-photo-grid .polaroid-frame:nth-child(3) {
     flex: 0 0 auto;
     max-width: 100%;
     margin: 0 auto;
@@ -2371,8 +2418,8 @@ body.portfolio-view-detail #detail-views {
     flex-direction: column;
     gap: 20px;
   }
-  .shanghai-photo-grid .hand-drawn-frame {
-    max-width: 340px;
+  .shanghai-photo-grid .polaroid-frame {
+    max-width: 320px;
     margin: 0 auto;
   }
   .gzrb-photo-grid {
@@ -2382,7 +2429,7 @@ body.portfolio-view-detail #detail-views {
     max-width: 420px;
     margin: 0 auto;
   }
-  .gzrb-photo-grid .hand-drawn-frame {
+  .gzrb-photo-grid .polaroid-frame {
     max-width: 100%;
   }
   .experience-entry {
