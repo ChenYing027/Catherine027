@@ -892,21 +892,22 @@ figcaption {
 .top-photo-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(9, minmax(24px, 1fr));
+  grid-template-rows: repeat(12, minmax(20px, 1fr));
   gap: 0;
   width: 100%;
   min-height: 420px;
-  padding: 22px 12px 18px 18px;
+  padding: 16px 10px 14px 14px;
   overflow: visible;
   position: relative;
 }
 
 .shan-collage .frame-shan-1 {
-  grid-column: 1 / 6;
-  grid-row: 3 / 9;
-  --r: -2.5deg;
-  --ty: 6px;
-  max-width: 158px;
+  grid-column: 1 / 7;
+  grid-row: 4 / 13;
+  --r: -2deg;
+  --ty: 2px;
+  --tx: 4px;
+  max-width: 148px;
   align-self: start;
   justify-self: start;
   z-index: 4;
@@ -914,23 +915,23 @@ figcaption {
 
 .shan-collage .frame-shan-2 {
   grid-column: 4 / 10;
-  grid-row: 1 / 6;
-  --r: 1deg;
+  grid-row: 1 / 11;
+  --r: 0.5deg;
   --ty: 0px;
-  --tx: -4px;
-  max-width: 198px;
+  --tx: -2px;
+  max-width: 180px;
   align-self: start;
   justify-self: center;
   z-index: 6;
 }
 
 .shan-collage .frame-shan-3 {
-  grid-column: 3 / 13;
-  grid-row: 6 / 10;
-  --r: -0.8deg;
-  --ty: -14px;
-  --tx: 4px;
-  max-width: 270px;
+  grid-column: 7 / 13;
+  grid-row: 4 / 13;
+  --r: 2deg;
+  --ty: 6px;
+  --tx: -6px;
+  max-width: 148px;
   align-self: start;
   justify-self: end;
   z-index: 5;
@@ -1000,14 +1001,14 @@ figcaption {
 .gzrb-photo-grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(7, minmax(22px, 1fr));
+  grid-template-rows: repeat(7, minmax(28px, 1fr));
   gap: 0;
   align-items: start;
   justify-items: start;
   width: 100%;
-  min-height: 340px;
-  max-width: 380px;
-  padding: 18px 10px 16px 22px;
+  min-height: 400px;
+  max-width: 460px;
+  padding: 18px 10px 16px 28px;
   overflow: visible;
   position: relative;
 }
@@ -1020,7 +1021,7 @@ figcaption {
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 110px;
+  max-height: 148px;
   object-fit: contain;
 }
 
@@ -1030,7 +1031,7 @@ figcaption {
   --r: -2deg;
   --tx: 0px;
   --ty: 0px;
-  max-width: 118px;
+  max-width: 158px;
   z-index: 4;
   align-self: start;
   justify-self: start;
@@ -1040,9 +1041,9 @@ figcaption {
   grid-column: 4 / 8;
   grid-row: 1 / 4;
   --r: 2deg;
-  --tx: -12px;
-  --ty: 14px;
-  max-width: 118px;
+  --tx: -16px;
+  --ty: 16px;
+  max-width: 158px;
   z-index: 5;
   align-self: start;
   justify-self: start;
@@ -1052,9 +1053,9 @@ figcaption {
   grid-column: 1 / 5;
   grid-row: 4 / 7;
   --r: 1.5deg;
-  --tx: 14px;
-  --ty: -16px;
-  max-width: 118px;
+  --tx: 20px;
+  --ty: -20px;
+  max-width: 158px;
   z-index: 6;
   align-self: start;
   justify-self: start;
@@ -1065,8 +1066,8 @@ figcaption {
   grid-row: 4 / 7;
   --r: -2.5deg;
   --tx: 2px;
-  --ty: -2px;
-  max-width: 118px;
+  --ty: -4px;
+  max-width: 158px;
   z-index: 7;
   align-self: start;
   justify-self: start;
@@ -2353,16 +2354,16 @@ body.portfolio-view-detail #detail-views {
   }
   .top-photo-grid {
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(9, minmax(22px, 1fr));
+    grid-template-rows: repeat(12, minmax(18px, 1fr));
     gap: 0;
-    max-width: 480px;
+    max-width: 440px;
     min-height: 380px;
     margin: 0 auto;
-    padding: 20px 10px 18px 16px;
+    padding: 16px 10px 14px 14px;
   }
-  .shan-collage .frame-shan-1 { max-width: 140px; }
-  .shan-collage .frame-shan-2 { max-width: 176px; }
-  .shan-collage .frame-shan-3 { max-width: 236px; --ty: -8px; }
+  .shan-collage .frame-shan-1 { max-width: 132px; }
+  .shan-collage .frame-shan-2 { max-width: 160px; }
+  .shan-collage .frame-shan-3 { max-width: 132px; }
 
   .shanghai-photo-grid {
     grid-template-columns: repeat(12, 1fr);
@@ -2382,15 +2383,15 @@ body.portfolio-view-detail #detail-views {
 
   .gzrb-photo-grid {
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(7, minmax(20px, 1fr));
+    grid-template-rows: repeat(7, minmax(26px, 1fr));
     gap: 0;
-    max-width: 340px;
-    min-height: 310px;
+    max-width: 420px;
+    min-height: 370px;
     margin: 0 auto;
-    padding: 16px 10px 14px 20px;
+    padding: 16px 10px 14px 24px;
   }
-  .gzrb-collage .frame-gzrb { max-width: 108px; }
-  .gzrb-collage .frame-gzrb img { max-height: 96px; }
+  .gzrb-collage .frame-gzrb { max-width: 144px; }
+  .gzrb-collage .frame-gzrb img { max-height: 132px; }
   .experience-entry,
   .experience-entry:nth-of-type(2) {
     grid-template-columns: 1fr;
@@ -2532,16 +2533,16 @@ body.portfolio-view-detail #detail-views {
   }
   .top-photo-grid {
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(9, minmax(18px, 1fr));
+    grid-template-rows: repeat(12, minmax(16px, 1fr));
     gap: 0;
-    max-width: 340px;
+    max-width: 320px;
     min-height: 320px;
     margin: 0 auto;
-    padding: 16px 6px 14px 14px;
+    padding: 14px 6px 12px 12px;
   }
-  .shan-collage .frame-shan-1 { max-width: 118px; }
-  .shan-collage .frame-shan-2 { max-width: 148px; }
-  .shan-collage .frame-shan-3 { max-width: 196px; --ty: -4px; }
+  .shan-collage .frame-shan-1 { max-width: 108px; }
+  .shan-collage .frame-shan-2 { max-width: 132px; }
+  .shan-collage .frame-shan-3 { max-width: 108px; }
 
   .shanghai-photo-grid {
     grid-template-columns: repeat(12, 1fr);
@@ -2561,18 +2562,18 @@ body.portfolio-view-detail #detail-views {
 
   .gzrb-photo-grid {
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(7, minmax(18px, 1fr));
+    grid-template-rows: repeat(7, minmax(24px, 1fr));
     gap: 0;
-    max-width: 300px;
-    min-height: 280px;
+    max-width: 360px;
+    min-height: 330px;
     margin: 0 auto;
-    padding: 14px 8px 12px 18px;
+    padding: 14px 8px 12px 22px;
   }
   .gzrb-collage .frame-gzrb {
-    max-width: 98px;
+    max-width: 126px;
   }
   .gzrb-collage .frame-gzrb img {
-    max-height: 88px;
+    max-height: 116px;
   }
   .experience-entry {
     padding: 22px 20px 26px;
